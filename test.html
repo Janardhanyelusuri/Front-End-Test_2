@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            color: blue;
+        }
+        a:hover{
+            color: red;
+        }
+        a:active{
+            color:#2ab02a;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 2px 2px 5px #000000;
+        }
+        p{
+            font-size: 1.2rem;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .card{
+            border: 1px solid gray;
+            margin:20px;
+            padding:10px;
+            max-width: 300px;
+        }
+        nav{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: center;
+        }
+        .gallery{
+            width: 600px;
+            display: grid;
+            gap:10px 10px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: 600px) {
+            .gallery{ background-color:blue;
+            grid-template-columns: 1fr;
+
+        }
+    }
+    button{
+        background-color: blue;
+        color:white
+    }
+    button:hover{
+        background-color: darkblue;
+        transform: scale(0.3s);
+        transform: scale(1.2);
+    }
+    .button2{
+        background-color: darkblue;
+        transform: scale(0.3s);
+        transform: scale(1.2);
+    }
+    .box{
+        padding:20px;
+        animation-name: box;
+        position:relative;
+        animation-duration: 3s;
+    }
+    @keyframes box{
+        0% {left:0px}
+        100%{left: 600px;}
+    }
+
+    </style>
+</head>
+<body>
+    <!--1. Create a list of links styled differently for hover and active states.-->
+    <ul>
+        <li><a href="#" class="link">Link 1</a></li>
+        <li><a href="#" class="link">Link 1</a></li>
+        <li><a href="#" class="link">Link 1</a></li>
+        <li><a href="#" class="link">Link 1</a></li>
+        <li><a href="#" class="link">Link 1</a></li>
+    
+    </ul>
+    <!--### **2.** Create a simple webpage with a title and a paragraph of text. ### **HTML Requirements:**-->
+    <h1 >My Webpage</h1>
+    <p>This is a paragraph of text.</p>
+
+    <!-- Create a card with a border, padding, and margin.-->
+     <div class="card">
+        <h2>Card Title</h2>
+     </div>
+     <!-- Create a responsive navigation bar with three links-->
+      <nav>
+        <a href="">home</a>
+        <a href="">about</a>
+        <a href="">contact</a>
+      </nav>
+      <!--Create a 2x2 grid layout for a photo gallery.-->
+      <div class="gallery">
+        <img src="https://picsum.photos/200/300" alt="image1">
+        <img src="https://picsum.photos/200/301" alt="image2">
+        <img src="https://picsum.photos/200/300" alt="image1">
+        <img src="https://picsum.photos/200/301" alt="image2">
+      </div>
+      <!-- Create a button that changes color when hovered over.-->
+       <button class="button">Click me!</button>
+
+    <!-- Create a button that scales when hovered over-->
+     <button class="button2">hover me!</button>
+     <!--Create a box that moves from left to right on the page.-->
+     <div class="box">
+        <h1>hello</h1>
+     </div>
+    </body>
+</html>
